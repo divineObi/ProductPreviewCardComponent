@@ -1,0 +1,24 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+.container {
+    background-color: hsl(30, 38%, 92%);
+}
+.box-container {
+    width: 50%;
+    margin: auto;
+}
+.flexbox {
+    display: flex;
+}
+.text-box {
+    background-color: hsl(0, 0%, 100%);
+}
