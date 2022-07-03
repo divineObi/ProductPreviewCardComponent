@@ -1,6 +1,6 @@
 *{
     font-family: 'Montserrat', sans-serif;
-    background-color: hsl(30, 38%, 92%);
+   
 }
 .attribution { 
     font-size: 11px; 
@@ -9,16 +9,22 @@
 .attribution a {
      color: hsl(228, 45%, 44%); 
 }
-.container {
+.box-container {
     background-color: hsl(30, 38%, 92%);
 }
 .box-container {
-    width: 50%;
+    width: 90%;
     margin: auto;
+    padding: 20px;
+    padding-left: 320px;
 }
 .flexbox {
     display: flex;
 }
-.text-box {
+.text-box .container {
+    padding: 20px;
+    width: 30%;
     background-color: hsl(0, 0%, 100%);
+    min-height: 63vh;
+
 }
