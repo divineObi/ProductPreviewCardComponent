@@ -89,7 +89,7 @@
 @media screen and (max-width: 375px) {
 
     .image-box{
-        width: 62.5%;
+        width: 310px;
         background-image: url(../images/image-product-mobile.jpg);
         background-repeat: no-repeat;
         background-size: contain;
@@ -100,16 +100,27 @@
     }
 
     .text-box {
-        padding: 1.25rem;
-        width: 54.54%;
+        width: 270px;
         background-color: hsl(0, 0%, 100%);
         border-bottom-right-radius: 12px;
         border-bottom-left-radius: 12px;
         border-top-right-radius: 0;
     }
+    .box-container{
+        margin-left: 0;
+        padding: 1.5rem;
+    }
     
     .flexbox {
         display: block;
+    }
+    .attribution{
+        text-align: left;
+    }
+    #container {
+        background-color: hsl(30, 38%, 92%);
+        width: 375px;
+        margin: auto;
     }
 }
     
