@@ -1,9 +1,8 @@
-*{
-        
-}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    margin: 20px;
 }
 .attribution a {
      color: hsl(228, 45%, 44%); 
@@ -14,19 +13,27 @@
     margin: auto;
 }
 .box-container {
-    width: 90%;
-    padding: 50px;
-    margin-left: 180px;
+    width: 50%;
+    padding: 3.125rem;
+    margin-left: 11.25rem;
+}
+.image-box{
+    width: 50%;
+    background-image: url(../images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
 }
 .flexbox {
     display: flex;
-    justify-content: center;
 }
-.text-box .container {
-    padding: 20px;
-    width: 39.4%;
+.text-box {
+    padding: 1.25rem;
+    width: 45%;
     background-color: hsl(0, 0%, 100%);
-    
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;    
 }
 .perfume-heading {
     letter-spacing: 0.5rem;
@@ -35,27 +42,28 @@
     font-family: 'Montserrat', sans-serif;
 }
 .perfume-title {
-    font-size: 32px;
+    font-weight: 700 ;
 }
 .perfume-desc {
     color: hsl(228, 12%, 48%);
-    font-size: 16px;
+    font-size: clamp(0.9rem, 1vw, 1rem);
     font-weight: 500;
     font-style: fraunces;
     font-family: 'Montserrat', sans-serif;
 }
 .prices {
-    margin-top: 10px;
+    margin-top: 0.78rem;
 }
 .real-price {
     font-style: fraunces;
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: clamp(1.5rem, 1.5vw, 1.5rem);
     color:  hsl(158, 36%, 37%);
     font-weight: 700;
 }
 .discounted-price {
-    margin-left: 14px;
+    margin-left: 0.9rem;
+    color: hsl(228, 12%, 48%);
 }
 .button {
     background-color: hsl(158, 36%, 37%) ; 
@@ -65,15 +73,44 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: clamp(1rem, 1vw, 1rem);
     font-style: fraunces;
     font-family: 'Montserrat', sans-serif;
-    border-radius: 10px;
+    border-radius: 0.6rem;
     width: 70%;
     margin: auto;
-    margin-top: 11px;
+    margin-top: 0.7rem;
 }
 .icon-style {
-    margin-right: 4px;
-    margin-top: 2px;
+    margin-right: 0.3rem;
+    margin-top: 0.13rem;
 }
+
+@media screen and (max-width: 375px) {
+
+    .image-box{
+        width: 62.5%;
+        background-image: url(../images/image-product-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 0;
+        height: 57.5vh;
+    }
+
+    .text-box {
+        padding: 1.25rem;
+        width: 54.54%;
+        background-color: hsl(0, 0%, 100%);
+        border-bottom-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border-top-right-radius: 0;
+    }
+    
+    .flexbox {
+        display: block;
+    }
+}
+    
+    
