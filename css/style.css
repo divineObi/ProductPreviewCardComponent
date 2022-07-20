@@ -92,11 +92,12 @@
         width: 310px;
         background-image: url(../images/image-product-mobile.jpg);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         border-top-right-radius: 12px;
         border-top-left-radius: 12px;
         border-bottom-left-radius: 0;
-        height: 54.75vh;
+        background-position: center;
+        height: 32vh;
     }
 
     .text-box {
@@ -122,6 +123,7 @@
         width: 375px;
         margin: auto;
     }
+   
 }
     
     
